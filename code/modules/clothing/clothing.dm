@@ -18,6 +18,7 @@
 	var/visible_name = "Unknown"
 	var/initial_slowdown = 0
 	var/insrank = null
+	var/original_icon //holds original armor icon for the armor breaking system
 
 /obj/item/clothing/examine(mob/user)
 	. = ..()
@@ -46,7 +47,16 @@
 
 // Updates the icons of the mob wearing the clothing item, if any.
 /obj/item/clothing/proc/update_clothing_icon()
-	return
+	if(has_some_sort_of_armor && length(armor_integrity))
+		switch(Floor(armor_integrity[armor_integrity[1]]/armor_integrity_starting * 100))
+			if(50 to 75)
+				icon_state = original_icon + "_2"
+			if(25 to 50)
+				icon_state = original_icon + "_3"
+			if(-INFINITY to 0)
+				icon_state = original_icon + "_4"
+	else 
+		return
 
 // Updates the vision of the mob wearing the clothing item, if any
 /obj/item/clothing/proc/update_vision()

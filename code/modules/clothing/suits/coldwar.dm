@@ -57,6 +57,7 @@
 	name = "6B2 vest"
 	desc = "An uncommon armor vest used by Soviet army."
 	icon_state = "6b2green"
+	original_icon = "6b2green"
 	item_state = "6b2green"
 	w_class = ITEM_SIZE_LARGE
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMOR_S)
@@ -65,6 +66,9 @@
 	armor_fullblock = DEFAULT_ARMOR_FULLBLOCK
 	slowdown_general = 0.15
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	
+
+
 
 //USMC
 /obj/item/clothing/suit/armor/vest/coldwar/pasgt
@@ -72,6 +76,7 @@
 	desc = "A common kevlar vest used by U.S. army."
 	icon_state = "pasgt_vest"
 	item_state = "armor"
+	original_icon = "pasgt_vest"
 	w_class = ITEM_SIZE_LARGE
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMOR_S)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMOR_S)
@@ -82,12 +87,14 @@
 
 /obj/item/clothing/suit/armor/vest/coldwar/pasgt/woodland
 	icon_state = "pasgt_vest_woodland"
+	original_icon = "pasgt_vest_woodland"
 
 /obj/item/clothing/suit/armor/vest/coldwar/flakvest
 	name = "M69 flak vest"
 	desc = "An outdated flak vest comonly used by Bundeswehr personnel."
 	icon_state = "flakvest_nato"
 	item_state = "armor"
+	original_icon = "flakvest_nato"
 	w_class = ITEM_SIZE_LARGE
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMOR_S)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMOR_S)
