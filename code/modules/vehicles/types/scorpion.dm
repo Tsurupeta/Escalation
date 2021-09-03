@@ -7,10 +7,10 @@
 	icon_state = "move"
 	anchored = 1
 
-	bound_height = 96
+	bound_height = 130
 	bound_width = 96
-	pixel_x = -72
-	pixel_y = -100
+	pixel_x = -70
+	pixel_y = -70
 	comp_prof = /datum/component_profile/scorpion
 
 	ammo_containers = newlist(/obj/item/ammo_magazine/scorp_coax,/obj/item/ammo_magazine/scorp_shell)
@@ -38,12 +38,13 @@
 	min_speed = 13
 	max_speed = 5
 	acceleration = 4
-	drag = 5
+	drag = 200
+	braking_mode = 0
 
 /obj/item/vehicle_component/health_manager/scorpion
 	integrity = 1000
 	resistances = list("bullet"=100,"energy"=85,"emp"=40,"bomb"=40)
-	repair_materials = list("plasteel")
+	repair_materials = list("steel")
 
 /datum/component_profile/scorpion
 	pos_to_check = "gunner"
