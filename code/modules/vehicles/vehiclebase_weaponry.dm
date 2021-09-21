@@ -2,14 +2,13 @@
 /obj/item/weapon/gun/vehicle_turret
 	name = "Vehicle Turret"
 
-	icon = 'icons/obj/coldwar/guns48x48.dmi'
-	icon_state = "rpg" ///change
-	item_state = "rpg1" ///change
+	icon = 'icons/obj/coldwar/vehicle_turret.dmi'
+	icon_state = "turret"
+	item_state = "turret"
 	w_class = ITEM_SIZE_LARGE
 
 	var/obj/vehicles/linked_vehicle
-	var/magazine_type = /obj/item/ammo_magazine
-	var/obj/item/ammo_magazine/mag_use
+	var/obj/item/projectile/projectile_fired = /obj/item/projectile/bullet/rifle/a762x54 //The typepath of the projectile fired by this gun.
 
 	fire_delay = 7
 
@@ -17,74 +16,76 @@
 
 /obj/item/weapon/gun/vehicle_turret/New(var/vehicle)
 	linked_vehicle = vehicle
-	reconsider_magazine()
 	. = ..()
 
 /obj/item/weapon/gun/vehicle_turret/dropped(var/mob/user)
-	. = ..()
 	loc = null
 	qdel(src)
 
-/obj/item/weapon/gun/vehicle_turret/examine(var/mob/examiner)
-	. = ..()
-	linked_vehicle.display_ammo_status(examiner)
-
-/obj/item/weapon/gun/vehicle_turret/afterattack(atom/attacked, mob/user, proximity)
-	if(attacked == linked_vehicle)
+//Inside-vehicle attack related procs.
+/obj/item/weapon/gun/vehicle_turret/afterattack(atom/target, var/mob/living/carbon/human/user, inrange, params)
+	if(target == linked_vehicle)
 		to_chat(user,"<span class = 'notice'>You can't fire at yourself.</span>")
+		return
+	if(world.time < next_fire_time)
+		if (world.time % 3) //to prevent spam
+			to_chat(user, "<span class='warning'>[src] is not ready to fire again!</span>")
 		return
 	if(!linked_vehicle.comp_prof.gunner_fire_check(user,linked_vehicle,src))
 		user.drop_from_inventory(src)
 		return
-	. = ..()
+	if(linked_vehicle.guns_disabled)
+		to_chat(user,"<span class = 'notice'>[linked_vehicle]'s weapons have been heavily damaged.</span>")
+		return
+	for(var/i = 0,i<burst,i++)
+	//	linked_vehicle.controller.gunner_turret_fire(user,target)
+		if(i == 0) //First shot: Don't delay.
+			relay_fire_action(user,target)
+			continue
+		spawn(burst_delay * i)
+			relay_fire_action(user,target)
+	next_fire_time = world.time + fire_delay
 
-/obj/item/weapon/gun/vehicle_turret/proc/reconsider_magazine()
-	mag_use = locate(magazine_type) in linked_vehicle.ammo_containers
-
-//Inside-vehicle attack related procs.
-/obj/item/weapon/gun/vehicle_turret/consume_next_projectile()
-	if(mag_use)
-		if(mag_use.stored_ammo.len == 0)
-			return null
-		var/obj/item/ammo_casing/casing = mag_use.stored_ammo[1]
-		var/obj/item/projectile/proj = casing.expend()
-		mag_use.stored_ammo -= casing
-		return proj
+/obj/item/weapon/gun/vehicle_turret/proc/relay_fire_action(var/mob/user,var/atom/target)
+	playsound(user, fire_sound, 50, 1)
+	var/obj/item/projectile/new_projectile_fired = new projectile_fired
+	new_projectile_fired.permutated += linked_vehicle
+	new_projectile_fired.loc = pick(linked_vehicle.locs)
+	new_projectile_fired.launch(target)
 
 /obj/item/weapon/gun/vehicle_turret/switchable
 	var/list/guns_switchto = list()
-	var/current_index = 1
 
 /obj/item/weapon/gun/vehicle_turret/switchable/attack_self(var/mob/user)
-	. = ..()
-	var/next_gun_index = current_index + 1
+	if(world.time < next_fire_time)
+		to_chat(user,"<span class = 'notice'>Wait for the current burst to finish.</span>")
+		return
+	var/current_gun_index = null
+	for(var/datum/vehicle_gun/gun in guns_switchto)
+		if(gun.name == name && gun.proj_fired == projectile_fired)
+			current_gun_index = guns_switchto.Find(gun)
+	var/next_gun_index = current_gun_index + 1
 	if(next_gun_index > guns_switchto.len)
-		next_gun_index = 1
+		next_gun_index -= guns_switchto.len
 
 	var/datum/vehicle_gun/next_gun = guns_switchto[next_gun_index]
 	name = next_gun.name
 	desc = next_gun.desc
-	magazine_type = next_gun.mag_used
-	reconsider_magazine()
+	projectile_fired = next_gun.proj_fired
 	burst = next_gun.burst_size
 	fire_delay = next_gun.fire_delay
 	burst_delay = next_gun.burst_delay
 	fire_sound = next_gun.fire_sound
-	var/switch_msg = "Switched to [name]."
-	if(world.time < next_fire_time)
-		switch_msg = "Switched to [name]. System still cycling from previous firing operation."
-	to_chat(user,"<span class = 'notice'>[switch_msg]</span>")
-	current_index = next_gun_index
+	to_chat(user,"<span class = 'notice'>Switched to [name]</span>")
 
 /datum/vehicle_gun
 	var/name = "gun"
 	var/desc = "gun"
 	var/burst_size = 1
 	var/burst_delay = 1
-	var/dispersion = list(0)
 	var/fire_delay = 1
 	var/fire_sound
-	var/mag_used
+	var/proj_fired = /obj/item/projectile
 
 #undef REFILL_SUCCEED
 #undef REFILL_FAIL

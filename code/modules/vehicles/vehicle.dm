@@ -11,7 +11,7 @@
 	layer = ABOVE_HUMAN_LAYER
 	density = 1
 	anchored = 1
-	animate_movement=1
+	animate_movement = 2
 	light_range = 4
 	light_power = 1
 

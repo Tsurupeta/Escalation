@@ -355,3 +355,22 @@
 
 /obj/item/projectile/bullet/rpgrocket/finn
 	icon_state = "finn"
+
+/obj/item/projectile/bullet/tank_shell
+	name = "tank shell"
+	icon_state = "rocket"
+	damage = 0
+	nodamage = 1
+	penetrating = 0
+	kill_count = 37
+	step_delay = 0.90
+	fire_sound = null//here we gonna use sound in AGS and not in bullets
+
+	//armor shouldn't block rpgs EVER
+	armor_damage = 200
+	armor_penetration = 200
+	var/ricochetchance = 0
+
+/obj/item/projectile/bullet/tank_shell/on_impact(var/atom/target, var/blocked = 0)
+	explosion(target, 1, 3, 5, 4)
+
