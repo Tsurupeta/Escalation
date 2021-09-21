@@ -7,7 +7,7 @@
 	icon_state = "move"
 	anchored = 1
 
-	bound_height = 100
+	bound_height = 128
 	bound_width = 96
 	pixel_x = -70
 	pixel_y = -70
@@ -19,7 +19,7 @@
 
 	occupants = list(4,1)
 
-	vehicle_size = 96
+	vehicle_size = 9
 
 	move_sound = 'sound/tank/x_T72Rumble.wav'
 
@@ -50,7 +50,7 @@
 	guns_switchto = newlist(/datum/vehicle_gun/t72_cannon,/datum/vehicle_gun/t72_machinegun)
 
 /datum/vehicle_gun/t72_cannon
-	name = "T-64 Cannon"
+	name = "T-72 Cannon"
 	desc = "A slow firing but devastatinly damaging cannon."
 	burst_size = 1
 	burst_delay = 1
