@@ -41,6 +41,9 @@ EvenInDeathIStillServe = {
 
 derpymcderpderp = {
 usa_officer
+::all::
+--ALL--
+sa_nco
 }
 
 yacobpo157 = {
@@ -81,10 +84,12 @@ usa_nco
 
 taumanta = {
 usa_enlisted
+::all::
 }
 
 boringcommunist = {
 usa_enlisted
+::ALL::
 }
 
 pepefrog = {
@@ -213,6 +218,7 @@ Von Carstein = {
 sa_officer
 sa_nco
 sa_enlisted
+::ALL::
 }
 
 Master8688 = {
@@ -338,6 +344,13 @@ sa_enlisted
 
 CeSium_Shark = {
 sa_enlisted
+::all::
+us_enlisted
+sa_nco
+us_nco
+us_officer
+usa_enlisted
+usa_nco
 }
 
 Freiwillige = {
@@ -350,6 +363,7 @@ sa_enlisted
 
 Sha.SCT = {
 sa_enlisted
+::all::
 }
 
 johnravioli = {
@@ -386,6 +400,8 @@ sa_enlisted
 
 vlad3 = {
 sa_enlisted
+usmc_enlisted
+::ALL::
 }
 
 Trikannov = {
@@ -409,5 +425,172 @@ sa_enlisted
 }
 
 BurnedSweetPotato = {
+sa_enlisted
+::all::
+}
+
+
+MrMachoMan = {
+sa_enlisted
+}
+
+Sivuha = {
+sa_enlisted
+sa_nco
+}
+
+Akellazp = {
+sa_enlisted
+}
+
+MeeM4903 = {
+usmc_enlisted
+::ALL::
+}
+
+Dorian_joestar = {
+usmc_enlisted
+::ALL::
+}
+
+
+SoftStone101 = {
+usmc_enlisted
+::ALL::
+}
+
+
+toroidalzer0 = {
+usmc_enlisted
+::ALL::
+}
+
+Nopakizone = {
+usmc_enlisted
+::ALL::
+}
+
+N9neTa9led = {
+sa_enlisted
+}
+
+Bob46 = {
+sa_enlisted
+}
+
+Shmesser = {
+usmc_enlisted
+::ALL::
+}
+
+B3anz = {
+usmc_enlisted
+::ALL::
+sa_enlisted
+us_enlisted
+}
+
+
+
+
+
+
+
+
+joooks = {
+::ALL::
+}
+
+
+Oshibka = {
+::ALL::
+}
+
+ B3anz = {
+::all::
+}
+
+
+Bob Cool = {
+::all::
+}
+
+
+I like D0nUts = {
+:ALL:
+::all::
+}
+
+
+Billy Hays = {
+::all::
+usa_enlisted
+}
+
+
+
+Dvachloh = {
+::ALL::
+us_enlisted
+}
+
+
+Subaruuuuu = {
+::all::
+us_enlisted
+sa_enlisted
+usa_enlisted
+}
+
+SilverSZ = {
+::all::
+us_enlisted
+sa_enlisted
+sa_nco
+sa_officer
+usa_enlisted
+}
+
+
+
+
+
+
+Hypela42 = {
+us_enlisted
+}
+
+
+
+
+IlikeD0nuts = {
+sa_enlisted
+sa_nco
+}
+
+
+
+The spire = {
+us_enlisted
+sa_enlisted
+}
+
+
+
+
+
+
+
+
+
+
+
+MoXuT0 = {
+usa_enlisted
+}
+
+
+
+Real Josef Stalin = {
 sa_enlisted
 }

@@ -431,16 +431,14 @@
 
 /datum/job/escalation/bund
 	title = "Bundeswehr"
-	enabled = 0
-	faction_tag = "bund" //The tag of the faction this job is a part of, for lookups
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes
+	enabled = 0 ///////base job, keep disabled.
+	faction_tag = "bund"  //The tag of the faction this job is a part of, for lookups
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund
 	military_faction = NATO
-	department_flag = BDWFORCE
-
-/datum/job/escalation/bund/equip(var/mob/living/carbon/human/H)
-	..()
-	H.fraction = "NATO"
-	H.gender = MALE
+	latejoin_at_spawnpoints = 1
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.fraction = "NATO"
 
 /datum/job/escalation/bund/bdwplatlead
 	title = "BDW Zugfuhrer"
@@ -449,7 +447,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platlead
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/platlead
 	selection_color = "#4682B4"
 	rank_number = 0
 	position = "team"
@@ -461,7 +459,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_skills(0, 0, -1, -1, 2, 1, 4, 0)
+		H.add_skills(0, 1, -1, -1, 2, 1, 4, 0)
 
 /datum/job/escalation/bund/bdwplatleaddep
 	title = "BDW Zugfuhrerassistant"
@@ -470,7 +468,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platleaddep
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/platleaddep
 	selection_color = "#4682B4"
 	rank_number = 1
 	position = "team"
@@ -486,11 +484,11 @@
 /datum/job/escalation/bund/bdwratelo
 	title = "BDW Funktelefonbetreiber"
 	name = "Funktelefonbetreiber"
-	english_name = "HQ Radioman"
+	english_name = "HQ Radio Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/ratelo
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/ratelo
 	selection_color = "#4682B4"
 	position = "team"
 	amount = 1
@@ -510,7 +508,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/messenger
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/messenger
 	selection_color = "#4682B4"
 	position = "team"
 	amount = 3
@@ -524,16 +522,16 @@
 		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
 
 /datum/job/escalation/bund/bdwcorpsman
-	title = "BDW Sanitaterschutze"
-	name = "Sanitaterschutze"
+	title = "BDW Sanitater"
+	name = "Sanitater"
 	english_name = "Field Medic"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/corpsman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/corpsman
 	selection_color = "#4682B4"
-	position = "fireteam"
-	amount = 3
+	position = "team"
+	amount = 1
 	rank_number = 2
 	enabled = 1
 	whitelist_rank = "bdw_enlisted"
@@ -550,7 +548,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/doctor
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/doctor
 	selection_color = "#4682B4"
 	position = "team"
 	amount = 1
@@ -561,7 +559,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_skills(0, 0, -1, -1, 5, 1, 2, 0)
+		H.add_skills(0, 0, -1, -1, 5, 1, 1, 0)
 
 /datum/job/escalation/bund/bdwsl
 	title = "BDW Gruppenfuhrer"
@@ -570,7 +568,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleader
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/sqleader
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 1
@@ -581,7 +579,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_skills(0, 0, -1, -1, 1, 1, 3, 0)
+		H.add_skills(0, 1, -1, -1, 1, 1, 3, 0)
 
 /datum/job/escalation/bund/bdwsld
 	title = "BDW Gruppenfuhrer Stellvertretender"
@@ -590,7 +588,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleaderdep
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/sqleaderdep
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 1
@@ -600,7 +598,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_skills(0, 0, -1, -1, 1, 1, 2, 0)
+		H.add_skills(0, 1, -1, -1, 1, 1, 2, 0)
 
 /datum/job/escalation/bund/bdwsm
 	title = "BDW Scharfschutze"
@@ -609,17 +607,38 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/marksman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/marksman
 	selection_color = "#4682B4"
 	position = "team"
 	amount = 1
 	enabled = 1
-	whitelist_rank = "bdw_enlisted"
+	rank_number = 4
+	whitelist_rank = "bdw_nco"
 	also_known_languages = list(LANGUAGE_ENGLISH = 10, LANGUAGE_RUSSIAN = 10)
 
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_skills(0, 2, -1, -1, 0, 1, 0, 0)
+
+/datum/job/escalation/bund/bdwmedic
+	title = "BDW Sanitaterschutze"
+	name = "Sanitaterschutze"
+	english_name = "Squad Medic"
+	minimal_player_age = 21
+	economic_modifier = 5
+	ideal_character_age = 28
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/corpsman
+	selection_color = "#4682B4"
+	position = "fireteam"
+	amount = 1
+	rank_number = 2
+	enabled = 1
+	whitelist_rank = "bdw_enlisted"
+	also_known_languages = list(LANGUAGE_ENGLISH = 40, LANGUAGE_RUSSIAN = 35)
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_skills(0, 0, -1, -1, 3, 1, 1, 0)
 
 /datum/job/escalation/bund/bdwmg
 	title = "BDW Machinengewehrschutze"
@@ -628,7 +647,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/mgunner
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/mgunner
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 1
@@ -647,7 +666,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/mgunnera
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/mgunnera
 	selection_color = "#FA8072"
 	rank_number = 1
 	position = "fireteam"
@@ -662,12 +681,12 @@
 
 /datum/job/escalation/bund/bdwgrenadier
 	title = "BDW Grenadier"
-	name = "Grenadierschutze"
-	english_name = "Grenadier"
+	name = "Grenadier"
+	english_name = "Squad Grenadier"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/grenadier
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/grenadier
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 1
@@ -686,32 +705,13 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/radioman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/radioman
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 1
 	enabled = 1
 	whitelist_rank = "bdw_enlisted"
 	also_known_languages = list(LANGUAGE_ENGLISH = 100, LANGUAGE_RUSSIAN = 40)
-
-	equip(var/mob/living/carbon/human/H)
-		..()
-		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
-
-/datum/job/escalation/bund/bdwrifle
-	title = "BDW Schutze"
-	name = "Schutze"
-	english_name = "Rifleman"
-	minimal_player_age = 21
-	economic_modifier = 5
-	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/rifleman
-	selection_color = "#4682B4"
-	position = "fireteam"
-	amount = 2
-	enabled = 1
-	whitelist_rank = "bdw_enlisted"
-	also_known_languages = list(LANGUAGE_ENGLISH = 10, LANGUAGE_RUSSIAN = 10)
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -724,7 +724,26 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/atrifleman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/atrifleman
+	selection_color = "#4682B4"
+	position = "fireteam"
+	amount = 2
+	enabled = 1
+	whitelist_rank = "bdw_enlisted"
+	also_known_languages = list(LANGUAGE_ENGLISH = 10, LANGUAGE_RUSSIAN = 10)
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
+
+/datum/job/escalation/bund/bdwrifle
+	title = "BDW Schutze"
+	name = "Schutze"
+	english_name = "Rifleman"
+	minimal_player_age = 21
+	economic_modifier = 5
+	ideal_character_age = 28
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/rifleman
 	selection_color = "#4682B4"
 	position = "fireteam"
 	amount = 2
@@ -737,14 +756,14 @@
 		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
 
 
-/datum/job/escalation/bund/mgcom
-	title = "BDW HWS Commander"
+/datum/job/escalation/bund/hwscom
+	title = "BDW Schwere Waffen Gruppenfuhrer"
 	name = "Schwere Waffen Gruppenfuhrer"
 	english_name = "Heavy Weapons Section Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleader
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/hwscom
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 1
@@ -756,14 +775,14 @@
 		..()
 		H.add_skills(0, 0, -1, -1, 1, 1, 3, 0)
 
-/datum/job/escalation/bund/mgload
-	title = "BDW HWS Loader"
+/datum/job/escalation/bund/hwsload
+	title = "BDW Schwere Waffen Gruppe Ladeschutze"
 	name = "Schwere Waffen Gruppe Ladeschutze"
 	english_name = "Heavy Weapons Section Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/rifleman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/hwsload
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 1
@@ -775,14 +794,14 @@
 		..()
 		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
 
-/datum/job/escalation/bund/mgop
-	title = "BDW HWS Operator"
-	name = "Schwere Waffen Gruppe Schutze"
+/datum/job/escalation/bund/hwsop
+	title = "BDW Schwere Waffen Gruppe Kanonier"
+	name = "Schwere Waffen Gruppe Kanonier"
 	english_name = "Heavy Weapons Section Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/rifleman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/hwsop
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 1
@@ -802,7 +821,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/bdwatlead
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/bdwatlead
 	selection_color = "#4682B4"
 	rank_number = 6
 	position = "fireteam"
@@ -822,7 +841,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/bdwatkanonier
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/bdwatkanonier
 	selection_color = "#4682B4"
 	rank_number = 2
 	position = "fireteam"
@@ -842,7 +861,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/bdwatassist
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bund/bdwatassist
 	selection_color = "#4682B4"
 	rank_number = 3
 	position = "fireteam"
@@ -854,6 +873,7 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_skills(0, 0, -1, -1, 0, 1, 0, 0)
+
 
 ////////////////////////////////////////////BAF///////////////////////////////////////////////
 
