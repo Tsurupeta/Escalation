@@ -52,6 +52,7 @@ usa_nco
 
 googles_hands = {
 usa_enlisted
+usa_enlisted
 }
 
 rourke39 = {
@@ -129,6 +130,8 @@ usa_enlisted
 
 Rippie129 = {
 usa_enlisted
+usa_nco
+usa_officer
 }
 
 thesecretslav = {
@@ -154,6 +157,9 @@ usa_enlisted
 
 eric066 = {
 usa_enlisted
+::all::
+usa_officer
+usa_nco
 }
 
 
@@ -186,6 +192,8 @@ usa_enlisted
 
 bongosz = {
 usa_nco
+::all::
+sa_enlisted
 }
 
 poggamer21 = {
@@ -235,6 +243,7 @@ sa_enlisted
 corbe = {
 sa_nco
 sa_enlisted
+usa_enlisted
 }
 
 Kyrac = {
@@ -288,6 +297,8 @@ sa_enlisted
 
 Echion = {
 sa_enlisted
+usa_nco
+usa_enlisted
 }
 
 C36311 = {
@@ -296,10 +307,15 @@ sa_enlisted
 
 Booperkin343435 = {
 sa_enlisted
+::all::
+usa_enlisted
+usa_nco
 }
 
 Lautaroluna180 = {
 sa_enlisted
+usa_enlisted
+usa_nco
 }
 
 NazbolGang = {
@@ -316,6 +332,8 @@ sa_enlisted
 
 AlexUNDRRRMKaroff = {
 sa_enlisted
+ddr_enlisted
+ddr_nco
 }
 
 atlasrules87 = {
@@ -427,6 +445,7 @@ sa_enlisted
 BurnedSweetPotato = {
 sa_enlisted
 ::all::
+ddr_enlisted
 }
 
 
@@ -437,20 +456,28 @@ sa_enlisted
 Sivuha = {
 sa_enlisted
 sa_nco
+ddr_nco
+ddr_enlisted
 }
 
 Akellazp = {
 sa_enlisted
+::all::
+ddr_enlisted
+nva_enlisted
 }
 
 MeeM4903 = {
 usmc_enlisted
 ::ALL::
+usa_enlisted
 }
 
 Dorian_joestar = {
 usmc_enlisted
 ::ALL::
+usa_enlisted
+usa_nco
 }
 
 
@@ -476,6 +503,7 @@ sa_enlisted
 
 Bob46 = {
 sa_enlisted
+ddr_enlisted
 }
 
 Shmesser = {
@@ -488,6 +516,8 @@ usmc_enlisted
 ::ALL::
 sa_enlisted
 us_enlisted
+usa_enlisted
+usa_nco
 }
 
 
@@ -519,6 +549,11 @@ Bob Cool = {
 I like D0nUts = {
 :ALL:
 ::all::
+usa_enlisted
+nva_enlisted
+ddr_enlisted
+ddr_officer
+ddr_nco
 }
 
 
@@ -594,3 +629,106 @@ usa_enlisted
 Real Josef Stalin = {
 sa_enlisted
 }
+
+
+Vovantys = {
+::all::
+sa_enlisted
+sa_nco
+sa_officer
+ddr_enlisted
+ddr_nco
+ddr_officer
+nva_enlisted
+}
+
+
+Egorium = {
+::all::
+usa_enlisted
+usa_nco
+}
+
+
+
+
+Jerman5 = {
+::all::
+}
+
+
+
+
+Doctor Alex = {
+::all::
+}
+
+
+
+
+
+
+
+Palerno = {
+::all::
+ddr_enlisted
+ddr_officer
+ddr_nco
+nva_enlisted
+sa_enlisted
+}
+
+
+
+
+
+
+Hapor = {
+::all::
+nva_enlisted
+sa_enlisted
+ddr_enlisted
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DoctorAlex = {
+ddr_enlisted
+nva_enlisted
+}
+
+
+
+
+
+
+
+
+Ondrej008 = {
+usa_enlisted
+}
+
+
+
+
+
+
+
+
+
