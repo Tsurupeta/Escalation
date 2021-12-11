@@ -160,6 +160,7 @@ usa_enlisted
 ::all::
 usa_officer
 usa_nco
+finn_enlisted
 }
 
 
@@ -227,11 +228,13 @@ sa_officer
 sa_nco
 sa_enlisted
 ::ALL::
+usa_enlisted
 }
 
 Master8688 = {
 sa_nco
 sa_enlisted
+usa_enlisted
 }
 
 
@@ -420,6 +423,7 @@ vlad3 = {
 sa_enlisted
 usmc_enlisted
 ::ALL::
+baf_enlisted
 }
 
 Trikannov = {
@@ -458,6 +462,7 @@ sa_enlisted
 sa_nco
 ddr_nco
 ddr_enlisted
+finn_enlisted
 }
 
 Akellazp = {
@@ -465,6 +470,7 @@ sa_enlisted
 ::all::
 ddr_enlisted
 nva_enlisted
+finn_enlisted
 }
 
 MeeM4903 = {
@@ -474,16 +480,14 @@ usa_enlisted
 }
 
 Dorian_joestar = {
-usmc_enlisted
-::ALL::
 usa_enlisted
 usa_nco
 }
 
 
 SoftStone101 = {
-usmc_enlisted
-::ALL::
+usa_enlisted
+baf_enlisted
 }
 
 
@@ -506,26 +510,12 @@ sa_enlisted
 ddr_enlisted
 }
 
-Shmesser = {
-usmc_enlisted
-::ALL::
-}
-
 B3anz = {
-usmc_enlisted
-::ALL::
-sa_enlisted
-us_enlisted
 usa_enlisted
 usa_nco
+usa_officer
+::ALL::
 }
-
-
-
-
-
-
-
 
 joooks = {
 ::ALL::
@@ -575,6 +565,7 @@ Subaruuuuu = {
 us_enlisted
 sa_enlisted
 usa_enlisted
+baf_enlisted
 }
 
 SilverSZ = {
@@ -647,6 +638,7 @@ Egorium = {
 ::all::
 usa_enlisted
 usa_nco
+baf_enlisted
 }
 
 
@@ -731,4 +723,35 @@ usa_enlisted
 
 
 
+
+
+
+
+
+
+
+Lord_Inquisitor228 = {
+usa_enlisted
+}
+
+
+
+
+
+Basipek = {
+finn_enlisted
+finn_nco
+}
+
+
+
+
+HopefullVicking = {
+baf_enlisted
+}
+
+Unwounddragon55 = {
+Unwounddragon55
+sa_enlisted
+}
 

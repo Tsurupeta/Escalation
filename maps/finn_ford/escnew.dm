@@ -1,5 +1,4 @@
 #if !defined(using_map_DATUM)
-	#include "escnew_areas.dm"
 
 	#include "finn_ford.dmm"
 

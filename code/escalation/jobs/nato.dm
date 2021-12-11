@@ -23,9 +23,9 @@
 	selection_color = "#B0C4DE"
 	rank_number = 0
 	position = "team"
-	enabled = 0
-	leading = 0
-	amount = 0
+	enabled = 1
+	leading = 1
+	amount = 1
 	whitelist_rank = "usmc_officer"
 	also_known_languages = list(LANGUAGE_GERMAN = 100, LANGUAGE_RUSSIAN = 80)
 
@@ -44,7 +44,7 @@
 	selection_color = "#B0C4DE"
 	amount = 1
 	rank_number = 1
-	enabled = 0
+	enabled = 1
 	position = "team"
 	whitelist_rank = "usmc_nco"
 	also_known_languages = list(LANGUAGE_GERMAN = 100, LANGUAGE_RUSSIAN = 60)
@@ -63,7 +63,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/ratelo
 	selection_color = "#B0C4DE"
 	amount = 1
-	enabled = 0
+	enabled = 1
 	rank_number = 2
 	position = "team"
 	whitelist_rank = "usmc_enlisted"
@@ -84,7 +84,7 @@
 	selection_color = "#B0C4DE"
 	amount = 2
 	position = "team"
-	enabled = 0
+	enabled = 1
 	rank_number = 2
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 20, LANGUAGE_RUSSIAN = 10)
@@ -103,7 +103,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/corpsman
 	selection_color = "#B0C4DE"
 	position = "fireteam"
-	enabled = 1
+	enabled = 3
 	amount = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 30, LANGUAGE_RUSSIAN = 30, LANGUAGE_FINNISH = 30)
@@ -122,7 +122,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/doctor
 	selection_color = "#B0C4DE"
 	amount = 1
-	enabled = 0
+	enabled = 1
 	position = "team"
 	whitelist_rank = "usmc_officer"
 	also_known_languages = list(LANGUAGE_GERMAN = 100, LANGUAGE_RUSSIAN = 80)
@@ -141,7 +141,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/marksman
 	selection_color = "#B0C4DE"
 	position = "team"
-	enabled = 0
+	enabled = 1
 	amount = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
@@ -179,7 +179,7 @@
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_nco"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
 
@@ -198,7 +198,7 @@
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
 
@@ -217,7 +217,7 @@
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
 
@@ -234,7 +234,7 @@
 	ideal_character_age = 28
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/sl
 	selection_color = "#B0C4DE"
-	amount = 1
+	amount = 3
 	rank_number = 2
 	position = "fireteam"
 	enabled = 1
@@ -278,7 +278,7 @@
 	selection_color = "#B0C4DE"
 	rank_number = 6
 	position = "fireteam"
-	amount = 2
+	amount = 8
 	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
@@ -298,7 +298,7 @@
 	selection_color = "#B0C4DE"
 	rank_number = 6
 	position = "fireteam"
-	amount = 1
+	amount = 3
 	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
@@ -318,7 +318,7 @@
 	selection_color = "#B0C4DE"
 	rank_number = 6
 	position = "fireteam"
-	amount = 1
+	amount = 3
 	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
@@ -338,7 +338,7 @@
 	selection_color = "#B0C4DE"
 	rank_number = 6
 	position = "fireteam"
-	amount = 6
+	amount = 3
 	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
@@ -358,8 +358,8 @@
 	selection_color = "#B0C4DE"
 	rank_number = 6
 	position = "fireteam"
-	amount = 2
-	enabled = 0
+	amount = 3
+	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
 
@@ -379,7 +379,7 @@
 	selection_color = "#B0C4DE"
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_nco"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
 
@@ -399,7 +399,7 @@
 	rank_number = 6
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
 
@@ -419,7 +419,7 @@
 	rank_number = 6
 	position = "fireteam"
 	amount = 2
-	enabled = 0
+	enabled = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
 
