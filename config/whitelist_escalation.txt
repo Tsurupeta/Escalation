@@ -6,216 +6,169 @@
 
 # STAFF
 
-MrGabol100 = {
-::ALL::
-a
-}
-
-emoats18 = {
-::ALL::
-}
-
-xlyana = {
-::ALL::
-}
-
-Xxxretroxgears3 = {
-::ALL::
-}
-
-cabostein = {
-::ALL::
-}
-
-toxici11i = {
-::ALL::
-}
-
-eskjjlj = {
-::ALL::
-}
-
-EvenInDeathIStillServe = {
-::ALL::
-}
-
 derpymcderpderp = {
-usa_officer
-::all::
---ALL--
-sa_nco
-}
+usmc_officer
 
 yacobpo157 = {
-usa_nco
+usmc_nco
 }
 
 googles_hands = {
-usa_enlisted
-usa_enlisted
+usmc_enlisted
+
 }
 
 rourke39 = {
-usa_nco
+usmc_nco
 }
 
 weras57 = {
-usa_officer
+usmc_officer
 }
 
 yarnhut = {
-usa_enlisted
+usmc_enlisted
 }
 
 fauxvail = {
-usa_enlisted
+usmc_enlisted
 }
 
 moorish_infanteer = {
-usa_enlisted
+usmc_enlisted
 }
 
 alexix1989 = {
-usa_enlisted
+usmc_enlisted
 }
 
 boltersam = {
-usa_nco
+usmc_nco
 }
 
 taumanta = {
-usa_enlisted
-::all::
+usmc_enlisted
 }
 
 boringcommunist = {
-usa_enlisted
-::ALL::
+usmc_enlisted
 }
 
 pepefrog = {
-usa_enlisted
+usmc_enlisted
 }
 
 poggamer21 = {
-usa_enlisted
+usmc_enlisted
 }
 
 bonomedia = {
-usa_enlisted
+usmc_enlisted
 }
 
 loseristaken = {
-usa_enlisted
+usmc_enlisted
 }
 asbestosman = {
-usa_enlisted
+usmc_enlisted
 }
 
 gy1ta23 = {
-usa_nco
+usmc_nco
 }
 
 demtrixd = {
-usa_enlisted
+usmc_enlisted
 }
 
 asbestosman = {
-usa_enlisted
+usmc_enlisted
 }
 
 bobcool = {
-usa_enlisted
+usmc_enlisted
 }
 
 Rippie129 = {
-usa_enlisted
-usa_nco
-usa_officer
+usmc_enlisted
+usmc_nco
+usmc_officer
 }
 
 thesecretslav = {
-usa_enlisted
+usmc_enlisted
 }
 
 subdon = {
-usa_enlisted
+usmc_enlisted
 }
 
 commanderchris = {
-usa_enlisted
+usmc_enlisted
 }
 
 ragdoll_hooman = {
-usa_nco
+usmc_nco
 }
 
 demvoka = {
-usa_enlisted
+usmc_enlisted
 }
 
-
 eric066 = {
-usa_enlisted
-::all::
-usa_officer
-usa_nco
+usmc_enlisted
+usmc_officer
+usmc_nco
 finn_enlisted
 }
 
-
 tristan63 = {
-usa_enlisted
+usmc_enlisted
 }
-
 
 billybawblel = {
-usa_enlisted
+usmc_enlisted
 }
 
-
 arbs = {
-usa_enlisted
+usmc_enlisted
 }
 
 epicdwarf = {
-usa_enlisted
+usmc_enlisted
 }
 
-
 pcgeek01 = {
-usa_enlisted
+usmc_enlisted
 }
 
 gand1hoff = {
-usa_enlisted
+usmc_enlisted
 }
 
 bongosz = {
-usa_nco
-::all::
-sa_enlisted
+usmc_nco
+usmc_enlisted
 }
 
 poggamer21 = {
-usa_enlisted
+usmc_enlisted
 }
 
 firenightpower = {
-usa_nco
+usmc_nco
 }
 
 theflyingbananagaming = {
-usa_nco
+usmc_nco
 }
 
 dreadlord56 = {
-usa_enlisted
+usmc_enlisted
 }
 zach666 = {
-usa_enlisted
+usmc_enlisted
 }
-
 
 Verach = {
 sa_officer
@@ -228,13 +181,13 @@ sa_officer
 sa_nco
 sa_enlisted
 ::ALL::
-usa_enlisted
+usmc_enlisted
 }
 
 Master8688 = {
 sa_nco
 sa_enlisted
-usa_enlisted
+usmc_enlisted
 }
 
 
@@ -246,7 +199,7 @@ sa_enlisted
 corbe = {
 sa_nco
 sa_enlisted
-usa_enlisted
+usmc_enlisted
 }
 
 Kyrac = {
@@ -300,8 +253,8 @@ sa_enlisted
 
 Echion = {
 sa_enlisted
-usa_nco
-usa_enlisted
+usmc_nco
+usmc_enlisted
 }
 
 C36311 = {
@@ -310,15 +263,10 @@ sa_enlisted
 
 Booperkin343435 = {
 sa_enlisted
-::all::
-usa_enlisted
-usa_nco
 }
 
 Lautaroluna180 = {
 sa_enlisted
-usa_enlisted
-usa_nco
 }
 
 NazbolGang = {
@@ -365,13 +313,12 @@ sa_enlisted
 
 CeSium_Shark = {
 sa_enlisted
-::all::
 us_enlisted
 sa_nco
 us_nco
 us_officer
-usa_enlisted
-usa_nco
+usmc_enlisted
+usmc_nco
 }
 
 Freiwillige = {
@@ -452,7 +399,6 @@ sa_enlisted
 ddr_enlisted
 }
 
-
 MrMachoMan = {
 sa_enlisted
 }
@@ -476,20 +422,18 @@ finn_enlisted
 MeeM4903 = {
 usmc_enlisted
 ::ALL::
-usa_enlisted
+usmc_enlisted
 }
 
 Dorian_joestar = {
-usa_enlisted
-usa_nco
+usmc_enlisted
+usmc_nco
 }
-
 
 SoftStone101 = {
-usa_enlisted
+usmc_enlisted
 baf_enlisted
 }
-
 
 toroidalzer0 = {
 usmc_enlisted
@@ -498,7 +442,6 @@ usmc_enlisted
 
 Nopakizone = {
 usmc_enlisted
-::ALL::
 }
 
 N9neTa9led = {
@@ -511,61 +454,44 @@ ddr_enlisted
 }
 
 B3anz = {
-usa_enlisted
-usa_nco
-usa_officer
-::ALL::
+usmc_enlisted
+usmc_nco
 }
 
 joooks = {
-::ALL::
+usmc_enlisted
+usmc_nco
 }
-
 
 Oshibka = {
-::ALL::
+usmc_enlisted
+usmc_nco
 }
-
- B3anz = {
-::all::
-}
-
 
 Bob Cool = {
-::all::
+usmc_enlisted
+usmc_nco
 }
 
 
 I like D0nUts = {
-:ALL:
-::all::
-usa_enlisted
-nva_enlisted
-ddr_enlisted
-ddr_officer
-ddr_nco
+usmc_enlisted
+usmc_nco
 }
-
 
 Billy Hays = {
 ::all::
-usa_enlisted
+usmc_enlisted
 }
-
-
 
 Dvachloh = {
 ::ALL::
 us_enlisted
 }
 
-
 Subaruuuuu = {
-::all::
-us_enlisted
-sa_enlisted
-usa_enlisted
-baf_enlisted
+usmc_enlisted
+usmc_nco
 }
 
 SilverSZ = {
@@ -574,56 +500,31 @@ us_enlisted
 sa_enlisted
 sa_nco
 sa_officer
-usa_enlisted
+usmc_enlisted
 }
-
-
-
-
-
 
 Hypela42 = {
 us_enlisted
 }
-
-
-
 
 IlikeD0nuts = {
 sa_enlisted
 sa_nco
 }
 
-
-
 The spire = {
 us_enlisted
 sa_enlisted
 }
-
-
-
-
-
-
-
-
-
-
-
-MoXuT0 = {
-usa_enlisted
+ {
+usmc_enlisted
 }
-
-
 
 Real Josef Stalin = {
 sa_enlisted
 }
 
-
 Vovantys = {
-::all::
 sa_enlisted
 sa_nco
 sa_officer
@@ -633,125 +534,51 @@ ddr_officer
 nva_enlisted
 }
 
-
 Egorium = {
-::all::
-usa_enlisted
-usa_nco
+usmc_enlisted
+usmc_nco
 baf_enlisted
 }
 
-
-
-
 Jerman5 = {
-::all::
+sa_enlisted
 }
-
-
-
 
 Doctor Alex = {
-::all::
+sa_enlisted
 }
-
-
-
-
-
-
 
 Palerno = {
-::all::
-ddr_enlisted
-ddr_officer
-ddr_nco
-nva_enlisted
 sa_enlisted
 }
-
-
-
-
-
 
 Hapor = {
-::all::
-nva_enlisted
 sa_enlisted
-ddr_enlisted
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 DoctorAlex = {
 ddr_enlisted
 nva_enlisted
 }
 
-
-
-
-
-
-
-
 Ondrej008 = {
-usa_enlisted
+usmc_enlisted
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Lord_Inquisitor228 = {
-usa_enlisted
+usmc_enlisted
 }
-
-
-
-
 
 Basipek = {
-finn_enlisted
-finn_nco
+sa_enlisted
+sa_nco
 }
-
-
-
 
 HopefullVicking = {
 baf_enlisted
 }
 
 Unwounddragon55 = {
-Unwounddragon55
 sa_enlisted
 }
 
