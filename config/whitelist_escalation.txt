@@ -16,6 +16,12 @@ usmc_nco
 googles_hands = {
 usmc_enlisted
 
+<<<<<<< Updated upstream
+=======
+WHATDAFUQ200 = {
+usmc_enlisted
+usmc_nco
+>>>>>>> Stashed changes
 }
 
 rourke39 = {
@@ -52,6 +58,10 @@ usmc_enlisted
 
 boringcommunist = {
 usmc_enlisted
+<<<<<<< Updated upstream
+=======
+::ALL::
+>>>>>>> Stashed changes
 }
 
 pepefrog = {
@@ -182,6 +192,10 @@ sa_nco
 sa_enlisted
 ::ALL::
 usmc_enlisted
+<<<<<<< Updated upstream
+=======
+usa_enlisted
+>>>>>>> Stashed changes
 }
 
 Master8688 = {
@@ -438,6 +452,7 @@ baf_enlisted
 toroidalzer0 = {
 usmc_enlisted
 ::ALL::
+usmc_nco
 }
 
 Nopakizone = {
@@ -572,6 +587,7 @@ usmc_enlisted
 Basipek = {
 sa_enlisted
 sa_nco
+<<<<<<< Updated upstream
 }
 
 HopefullVicking = {
@@ -581,4 +597,55 @@ baf_enlisted
 Unwounddragon55 = {
 sa_enlisted
 }
+=======
+}
+
+HopefullVicking = {
+baf_enlisted
+}
+
+Unwounddragon55 = {
+sa_enlisted
+sa_nco
+}
+
+Neopolitian = {
+usmc_enlisted
+usmc_nco
+}
+
+Rand4l = {
+usmc_enlisted
+usmc_nco
+}
+
+airpod shotty = {
+usmc_enlisted
+usmc_nco
+}
+
+Jay Fart = {
+usmc_nco
+usmc_enlisted
+}
+
+
+
+
+
+
+
+Kindadread = {
+::all::
+usmc_enlisted
+sa_enlisted
+sa_nco
+usmc_officer
+sa_officer
+}
+
+
+
+
+>>>>>>> Stashed changes
 

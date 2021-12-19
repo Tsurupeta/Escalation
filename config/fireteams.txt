@@ -75,6 +75,44 @@ Squad Delta:usmc
 /datum/job/escalation/usmc/usmccorpsman
 @END@
 
+Squad Echo:usmc
+/datum/job/escalation/usmc/usmcsl
+/datum/job/escalation/usmc/usmcftl
+/datum/job/escalation/usmc/usmcftmg
+/datum/job/escalation/usmc/usmcftlat
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmcftl
+/datum/job/escalation/usmc/usmcftg
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmccorpsman
+@END@
+
+Squad Foxtrot:usmc
+/datum/job/escalation/usmc/usmcsl
+/datum/job/escalation/usmc/usmcftl
+/datum/job/escalation/usmc/usmcftmg
+/datum/job/escalation/usmc/usmcftlat
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmcftl
+/datum/job/escalation/usmc/usmcftg
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmcfto
+/datum/job/escalation/usmc/usmccorpsman
+@END@
+
+Heavy Weapons Fireteam:usmc
+/datum/job/escalation/usmc/usmcmgcom
+/datum/job/escalation/usmc/usmcmgload
+/datum/job/escalation/usmc/usmcmgop
+@END@
+
+Anti Tank Fireteam:usmc
+/datum/job/escalation/usmc/usmcatcom
+/datum/job/escalation/usmc/usmcat
+/datum/job/escalation/usmc/usmcata
+@END@
+
 Gruppe Alpha:bund
 /datum/job/escalation/bund/bdwsl
 /datum/job/escalation/bund/bdwsld
