@@ -106,8 +106,6 @@ var/list/admin_verbs_admin = list(
 	/client/proc/announce_battle_start,
 	/client/proc/warpact_major,
 	/client/proc/nato_major,
-	/client/proc/warpact_minor,
-	/client/proc/nato_minor,
 	/client/proc/draw_major,
 	/datum/admins/proc/ToggleCkeyWhitelist,
 	/datum/admins/proc/ReloadCkeyWhitelist,
@@ -1161,7 +1159,7 @@ var/global/list/global_colour_matrix = null
 	var/startconfirm = alert("Are you sure you want to start the battle?", "Are you sure you want to start the battle?", "Yes", "No")
 	if(startconfirm == "Yes")
 		to_world("<b><font size=2>Enemy presence in the AO is confirmed. Operational readiness No. 1 has been declared.<font></b>")
-		to_world("<b><font size=2>Division command has authorized the company's advance.</font></b>")
+		to_world("<b><font size=2>Platoon command has authorized the squad's advance.</font></b>")
 		sound_to(world, 'sound/effects/Evacuation.ogg')
 		log_and_message_admins("has set forth the end of the world.")
 		roundstarted = 1
@@ -1170,23 +1168,23 @@ var/global/list/global_colour_matrix = null
 
 /client/proc/nato_major()
 	set category = "EscAdmin"
-	set name = "Announce BDW Victory"
-	var/victoryconfirm = alert("Are you sure you want to declare a BDW victory?", "Are you sure you want to declare a BDW victory?", "Yes", "No")
+	set name = "Announce US Victory"
+	var/victoryconfirm = alert("Are you sure you want to declare a US victory?", "Are you sure you want to declare a BDW victory?", "Yes", "No")
 	if(victoryconfirm == "Yes")
 		log_and_message_admins("has declared NATO Victory")
-		to_world("<b><font size=5>The Bundeswehr have secured held the American Embassy! Bundeswehr Vorwarts!</font></b>")
-		sound_to(world, 'sound/music/bdwwin.ogg')
+		to_world("<b><font size=5>The Americans Infantry have butchered the Soviets! Try harder commies!</font></b>")
+		sound_to(world, 'sound/music/bluemonday.ogg')
 	else
 		return
 
 /client/proc/warpact_major()
 	set category = "EscAdmin"
-	set name = "Announce NVA Victory"
+	set name = "Announce SA Victory"
 	var/victoryconfirm = alert("Are you sure you want to declare a NVA victory?", "Are you sure you want to declare a NVA victory?", "Yes", "No")
 	if(victoryconfirm == "Yes")
 		log_and_message_admins("has declared WARPACT Victory")
-		to_world("<b><font size=5>The National Volkarmee have pushed the Bundeswehr back! Fur die Arbeiter!</font></b>")
-		sound_to(world, 'sound/music/nvawin.ogg')
+		to_world("<b><font size=5>The Soviet Infantry have crushed the Americans! YPA!</font></b>")
+		sound_to(world, 'sound/music/bluemonday.ogg')
 	else
 		return
 
